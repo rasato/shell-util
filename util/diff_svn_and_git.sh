@@ -21,7 +21,7 @@ do
     diff_svn_and_git ${svn_repo_name} ${git_repo_name} ${branch}
   done
 
-done
+done | tee diff_of_svn_to_git-`date +%Y%m%d`.log
 
 # $1:svn_name
 # $2:git_name
